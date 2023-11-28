@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.bg-header {
-  background: url(/assets/hero_flower_small.jpeg) center center no-repeat;
-  background-attachment: fixed;
-  background-position: bottom left;
-}
