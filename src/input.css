@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-header {
   background: url(/assets/hero_flower_medium.jpeg) center center no-repeat;
-  background-attachment: fixed;
-  background-position: bottom left;
+  background-size: cover;
 }
 
 .bg-about-us {
@@ -31,6 +34,13 @@
 
 .bg-prvni-vysetreni {
   background: url(/assets/prvni_vys_medium.jpeg) center center no-repeat;
-  background-attachment: fixed;
-  background-position: bottom left;
+  background-size: cover;
+}
+
+/* Pevné pozadí jen na velkých obrazovkách – iOS/Android ho nepodporují */
+@media (min-width: 1024px) {
+  .bg-header,
+  .bg-prvni-vysetreni {
+    background-attachment: fixed;
+  }
 }
